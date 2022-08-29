@@ -39,6 +39,11 @@ main {
   color:  hsla(0, 0%, 100%, 0.75);
   border-radius: 15px;
 }
+/* Card */
+  .card{
+    display: flex;
+    max-width: 1080px;
+  }
 /* Card Image */
 
 picture img {
@@ -66,7 +71,7 @@ picture img {
   flex-direction: column;
   text-align: center;
   gap: 20px;
-  padding: 30px 50px;
+  padding: 30px 14vw;
 }
 
 /* title */
@@ -98,10 +103,40 @@ picture img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex-wrap: wrap;
 }
 /* Linear effect animation */
 @keyframes rotate {
   to {
     background-position: 300% center;
+  }
+}
+/* Medium screen devices */
+@media only screen and (min-width: 700px) {
+  .text-container {
+  text-align: left;
+  width: 50%;
+  padding: 50px 6vw;
+  justify-content: space-around;
+}
+  .card{
+    display: flex;
+  }
+  .img-container {
+    order: 1;
+    width: 50%;
+  }
+  .highlights {
+    flex-direction: row;
+  }
+  .card-title {
+    font-size: 28px;
+  }
+  .card-title span {
+    font-size: 33px;
+  }
+  /* border radius fixation */
+  picture img, .img-container::after {
+  border-radius: 0 15px 15px 0;
   }
 }
