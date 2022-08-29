@@ -39,11 +39,6 @@ main {
   color:  hsla(0, 0%, 100%, 0.75);
   border-radius: 15px;
 }
-/* Card */
-  .card{
-    display: flex;
-    max-width: 1080px;
-  }
 /* Card Image */
 
 picture img {
@@ -143,5 +138,9 @@ picture img {
   /* border radius fixation */
   picture img, .img-container::after {
   border-radius: 0 15px 15px 0;
+  }
+    .card{
+    display: flex;
+    max-width: 1080px;
   }
 }
