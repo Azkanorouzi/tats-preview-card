@@ -1,0 +1,107 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+/* Default reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  Font-size: 15px;
+}
+/* main & container */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* TODO:  */
+  padding: 100px 30px;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  /* Background color */
+    background: linear-gradient(
+    to right,
+    hsl(277, 64%, 20%),
+    hsl(331, 100%, 20%),
+    hsl(260, 100%, 20%),
+    hsl(299, 62%, 20%),
+    hsl(331, 100%, 20%),
+    hsl(277, 64%, 20%)
+  );
+  background-size:1000%;
+  animation: rotate 10s linear infinite;
+}
+.container {
+  background: hsl(244, 38%, 16%);
+  color:  hsla(0, 0%, 100%, 0.75);
+  border-radius: 15px;
+}
+/* Card Image */
+
+picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+/* This container is used to create a color layer  */
+.img-container{
+  position: relative;
+}
+.img-container::after {
+  content:"";
+  width: 100%;
+  height: 100%;
+  background: hsla(277, 63%, 30%, 0.699);
+  position:absolute;
+  top: 0;
+  right:0;
+  border-radius: 15px 15px 0 0;
+}
+/* Text section */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 30px 50px;
+}
+
+/* title */
+.card-title span,h2{
+  font-size: 25px;
+  font-weight: 700;
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #aa5cdb,
+    #ff047d,
+    #ff0400,
+    #cc30cf,
+    #ff047d,
+    #aa5cdb
+  );
+  animation: rotate 3s linear infinite;
+}
+/* main-paragraph */
+.card-description {
+  line-height:23px;
+  font-weight: 400;
+  color:hsla(0, 0%, 100%, 0.75);
+}
+/* Highlights */
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Linear effect animation */
+@keyframes rotate {
+  to {
+    background-position: 300% center;
+  }
+}

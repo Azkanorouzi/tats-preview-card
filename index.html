@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Stats preview card component</title>
 
 </head>
+
 <body>
   <!-- =================================== -->
   <!--              main start             -->
@@ -16,34 +19,42 @@
   <main>
     <!-- ====== container start ====== -->
     <section class="container">
-    <figure>
+      <figure>
         <!-- ------ Main image ------ -->
-    <picture>
-      <source srcset="images/image-header-desktop-webp" media="(min-width: 1000px)">
-      <img src="images/image-header-mobile.jpg" alt="colleagues in office">
-    </picture>
-      <!-- ------ Text start ------ -->
-    <figcaption>
-      <!-- Title -->
-      <h1>
-      Get <span> insights </span> that help your business grow.
-      </h1>
-      <p>
-      Discover the benefits of data analytics and make  better decisions regarding revenue, customer 
-      experience, and overall efficiency.
-      </p>
-      <!-- Highlights Start -->
-      <div class="highlights">
-        <!-- companies -->
-        <div> <h2> 10k+ </h2> <span> companies </span> </div>
-        <!-- templates -->
-        <div> <h2> 314 </h2> <span> templates </span> </div>
-        <!-- queries -->
-        <div> <h2> 12m+ </h2> <span> queries </span></div>
-      </div>
-      <!-- Highlights End -->
-    </figcaption>
-    <!-- ------ Text end ------ -->
+        <div class="img-container">
+          <picture>
+            <source srcset="images/image-header-desktop.jpg" media="(min-width: 1000px)">
+            <img src="images/image-header-mobile.jpg" alt="colleagues in office">
+          </picture>
+        </div>
+        <!-- ------ Text start ------ -->
+        <figcaption class="text-container">
+          <!-- Title -->
+          <h1 class="card-title">
+            Get <span> insights </span> that help your business grow.
+          </h1>
+          <p class="card-description">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.
+          </p>
+          <!-- Highlights Start -->
+          <div class="highlights">
+            <!-- companies -->
+            <div>
+              <h2> 10k+ </h2> <span> Companies </span>
+            </div>
+            <!-- templates -->
+            <div>
+              <h2> 314 </h2> <span> Templates </span>
+            </div>
+            <!-- queries -->
+            <div>
+              <h2> 12m+ </h2> <span> Queries </span>
+            </div>
+          </div>
+          <!-- Highlights End -->
+        </figcaption>
+        <!-- ------ Text end ------ -->
     </section>
     <!-- ====== container end ====== -->
   </main>
@@ -51,4 +62,5 @@
   <!--              main end               -->
   <!-- =================================== -->
 </body>
+
 </html>
