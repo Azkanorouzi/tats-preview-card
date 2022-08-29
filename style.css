@@ -105,6 +105,11 @@ picture img {
   gap: 20px;
   flex-wrap: wrap;
 }
+.highlights div span{
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
 /* Linear effect animation */
 @keyframes rotate {
   to {
